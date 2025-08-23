@@ -8,6 +8,5 @@ namespace AntArena.Domain.Entities
     {
         public AntYellow(Size borders, Random random, IAntMovement movement, Bitmap bitmap)
             : base(borders, "#FFFF00", AntDirection.RightDown, 4, 4, movement, random, bitmap) { }
-
     }
 }

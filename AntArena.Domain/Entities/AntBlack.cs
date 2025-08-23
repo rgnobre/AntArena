@@ -1,6 +1,5 @@
 ﻿using AntArena.Domain.Enums;
 using AntArena.Domain.Interfaces;
-using System;
 using System.Drawing;
 
 namespace AntArena.Domain.Entities

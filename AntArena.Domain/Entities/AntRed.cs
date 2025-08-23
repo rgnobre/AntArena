@@ -2,7 +2,6 @@
 using AntArena.Domain.Interfaces;
 using System.Drawing;
 
-
 namespace AntArena.Domain.Entities
 {
     public class AntRed : Ant

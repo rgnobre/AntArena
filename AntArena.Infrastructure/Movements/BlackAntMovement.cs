@@ -29,6 +29,7 @@ namespace AntArena.Infrastructure.Movements
                             ant.Direction = AntDirection.LeftDown;
                         }
                         break;
+
                     case AntDirection.LeftDown:
                         ant.X -= ant.HorizontalVelocity;
                         ant.Y += ant.VerticalVelocity;
@@ -46,6 +47,7 @@ namespace AntArena.Infrastructure.Movements
                             ant.Direction = AntDirection.LeftUp;
                         }
                         break;
+
                     case AntDirection.RightUp:
                         ant.X += ant.HorizontalVelocity;
                         ant.Y -= ant.VerticalVelocity;
@@ -63,6 +65,7 @@ namespace AntArena.Infrastructure.Movements
                             ant.Direction = AntDirection.RightDown;
                         }
                         break;
+
                     case AntDirection.RightDown:
                         ant.X += ant.HorizontalVelocity;
                         ant.Y += ant.VerticalVelocity;

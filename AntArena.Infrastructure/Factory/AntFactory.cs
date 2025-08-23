@@ -12,6 +12,7 @@ namespace AntArena.Infrastructure.Factories
         private readonly Size _arenaSize;
         private readonly Random _random;
         private readonly Bitmap _image;
+
         public AntFactory(Size arenaSize, Random random, Bitmap image)
         {
             _arenaSize = arenaSize;

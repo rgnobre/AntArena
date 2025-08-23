@@ -3,6 +3,8 @@ using AntArena.Domain.Interfaces;
 using System.Collections.Generic;
 using System.Drawing;
 
+namespace Ant_3_Arena.Simulation;
+
 public class ArenaSimulation : IArenaSimulation
 {
     private readonly List<IAnt> _ants = new List<IAnt>();
@@ -13,6 +15,7 @@ public class ArenaSimulation : IArenaSimulation
     {
         _antFactory = factory;
     }
+
     public void InitializeAnts(int antQuantity)
     {
         _ants.Clear();

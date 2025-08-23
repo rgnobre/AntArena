@@ -1,6 +1,5 @@
 ﻿using AntArena.Domain.Enums;
 using AntArena.Domain.Interfaces;
-using System;
 using System.Drawing;
 
 namespace AntArena.Domain.Entities
@@ -34,7 +33,6 @@ namespace AntArena.Domain.Entities
             X = random.Next(0, borders.Width);
             Y = random.Next(0, borders.Height);
         }
-
 
         private static Bitmap ColorAnt(Bitmap original, string colorHex)
         {

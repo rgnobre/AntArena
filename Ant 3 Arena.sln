@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntArena.Infrastructure", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ant 3 Arena", "AntArena\Ant 3 Arena.csproj", "{8CB5C482-BB61-4FA3-A3FE-AE4EB67EEFBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntArena.Tests", "AntArena.Tests\AntArena.Tests.csproj", "{652AAAB1-CAAB-44BC-9004-4E8471E8F391}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8CB5C482-BB61-4FA3-A3FE-AE4EB67EEFBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CB5C482-BB61-4FA3-A3FE-AE4EB67EEFBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CB5C482-BB61-4FA3-A3FE-AE4EB67EEFBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{652AAAB1-CAAB-44BC-9004-4E8471E8F391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{652AAAB1-CAAB-44BC-9004-4E8471E8F391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{652AAAB1-CAAB-44BC-9004-4E8471E8F391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{652AAAB1-CAAB-44BC-9004-4E8471E8F391}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

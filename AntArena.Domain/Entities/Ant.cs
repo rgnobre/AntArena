@@ -1,4 +1,5 @@
 ﻿using AntArena.Domain.Enums;
+using AntArena.Domain.Extensions;
 using AntArena.Domain.Interfaces;
 using System.Drawing;
 
@@ -27,29 +28,11 @@ namespace AntArena.Domain.Entities
             Direction = initialDirection;
             VerticalVelocity = verticalVelocity;
             HorizontalVelocity = horizontalVelocity;
-            AntImage = ColorAnt(image, colorHex);
+            AntImage = image.ReplaceColor(colorHex);
             this.movement = movement;
 
             X = random.Next(0, borders.Width);
             Y = random.Next(0, borders.Height);
-        }
-
-        private static Bitmap ColorAnt(Bitmap original, string colorHex)
-        {
-            Color newColor = ColorTranslator.FromHtml(colorHex);
-            Color white = ColorTranslator.FromHtml("#FFFFFF");
-
-            Bitmap bmp = new Bitmap(original);
-            for (int x = 0; x < bmp.Width; x++)
-            {
-                for (int y = 0; y < bmp.Height; y++)
-                {
-                    Color gotColor = bmp.GetPixel(x, y);
-                    if (gotColor == white)
-                        bmp.SetPixel(x, y, newColor);
-                }
-            }
-            return bmp;
         }
 
         public void Move(Size bounds) => movement.Move(this, bounds);
